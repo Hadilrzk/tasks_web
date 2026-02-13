@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.form-container {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 30px;
+    padding: 50px 60px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+}
+.form-title {
+    color: black;
+    font-size:  2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.form-grp {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    color: #718096;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    color: #2d3748;
+    transition: all 0.3s ease;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #667eea;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+input::placeholder {
+    color: #a0aea0;
+}
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23667eea' d='M6 9l-3-3h6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 18px center;
+    padding-right: 45px;
+
+}
+select option{
+    padding:  10px;
+    font-weight: 500;
+}
+select option[data-color="blue"]{
+    background-color: #667eea;
+    color: white;
+}
+select option[data-color="purple"]{
+    background-color: #764ba2;
+    color: white;
+}
+select option[data-color="green"]{
+    background-color: #4ce06e;
+    color: white;
+}
+select option[data-color="orange"]{
+    background-color: #f7971e;
+    color: white;
+}
+select option[data-color="red"]{
+    background-color: #e43a15;
+    color: white;
+}
+select option[data-color="pink"]{
+    background-color: #ff6a88;
+    color: white;
+}
+select option[data-color="yellow"]{
+    background-color: #f9d423;
+    color: white;
+}
+.submit-btn {
+    width: 100%;
+    padding:  16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white ;
+    border:  none;
+    border-radius: 50px;
+    font-size:  1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(102,126, 234, 0.4 );
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(102, 126, 234,0.5);
+}
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 30px 20px;
+    }
+    .form-title {
+        font-size: 1.5rem;
+    }
+}
